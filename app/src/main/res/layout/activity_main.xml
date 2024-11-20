@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FAFAFC"
+    android:gravity="center_horizontal">
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather Forecast"
+        android:textSize="26sp"
+        android:textColor="#00796B"
+        android:layout_marginBottom="18dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <!-- City Input Field -->
+    <EditText
+        android:id="@+id/editTextCityName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter city name"
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="#FFFFFF"
+        android:textColor="#212121"
+        android:textSize="16sp"
+        android:layout_marginBottom="18dp"
+        android:elevation="2dp"/>
+
+    <!-- Get Weather Button -->
+    <Button
+        android:id="@+id/buttonGetWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Weather"
+        android:textColor="#FFFFFF"
+        android:background="#00796B"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp"
+        android:paddingHorizontal="16dp"/>
+
+    <!-- Weather Information -->
+    <TextView
+        android:id="@+id/textViewTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:textColor="#1A237E"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/maxTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:textColor="#424242"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/minTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:textColor="#424242"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/textViewHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:textColor="#1A237E"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Weather Description -->
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:textColor="#757575"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Weather Icon -->
+    <ImageView
+        android:id="@+id/weatherIcon"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:contentDescription="Weather Icon"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp"
+        android:elevation="4dp"/>
+
+</LinearLayout>
